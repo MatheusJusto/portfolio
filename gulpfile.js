@@ -8,6 +8,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 
+
 // Lint Task
 gulp.task('lint', function() {
     return gulp.src('js/*.js')
@@ -35,7 +36,7 @@ gulp.task('scripts', function() {
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch('js/*.js', ['lint', 'scripts']);
-    gulp.watch('sass/*.sass', ['sass']);
+    gulp.watch('sass/**/*.sass', ['sass']);
 });
 
 // Default Task
