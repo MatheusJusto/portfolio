@@ -1,7 +1,7 @@
 {
-  "name": "portfolio matheus",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "portfolio matheus justo",
+  "description": "portfolio-matheus-justo",
   "main": "index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,12 +9,11 @@
   "author": "Matheus Garcia",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-jshint": "^2.0.2",
-    "gulp-ruby-sass": "^2.1.1",
-    "gulp-sass": "^2.3.2",
-    "gulp-uglify": "^2.0.0",
-    "gulp-watch": "^4.3.10",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
     "jshint": "^2.9.4"
   },
   "directories": {
