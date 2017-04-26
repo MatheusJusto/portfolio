@@ -4,4 +4,4 @@
 /node_modules
 bower.json
 .sass-cache
-.sass-cache/**/*
+/sass
