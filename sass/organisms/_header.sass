@@ -1,0 +1,100 @@
+.header-top
+    +clearfix
+    min-height: 670px
+    background:
+        image: url('../img/backgroundheader.png')
+        position: top center
+        repeat: no-repeat
+        color: #ccc
+        size: cover
+        attachment: fixed
+    padding-top: 20px
+    +breakpoint($celular)
+        padding: 5px 0
+        min-height: 570px
+    +breakpoint($phablet)
+        padding: 5px 0
+    +breakpoint($tablet)
+        padding: 5px 0
+    .logo
+        display: block
+        float: left
+        img
+            +breakpoint($celular)
+                width: 110px
+
+    .links
+        float: right
+        padding-top: 10px
+        
+
+        nav, .social
+            display: inline-block
+
+        nav
+            +breakpoint($celular)
+                display: none
+            +breakpoint($phablet)
+                display: none
+            ul
+                list-style: none
+            li
+                display: inline-block
+                margin-right: 20px
+                +breakpoint($tablet)
+                    margin-right: 10px
+                a
+                    text-decoration: none
+                    text-transform: uppercase
+                    color: #fff
+                    &:hover
+                        text-decoration: underline
+        .social
+            list-style: none
+            +breakpoint($celular)
+                padding-top: 5px
+            +breakpoint($phablet)
+                padding-top: 5px
+            +breakpoint($tablet)
+                padding-top: 5px
+            li
+                display: inline-block
+                a
+                    color: #fff
+                    i
+                        font-size: 24px
+                        margin: 0 5px
+                
+
+    h2
+        color: #fff
+        clear: both
+        margin: 250px 0 0
+        font-weight: bolder
+        text-align: center
+        font-size: 36px
+        +breakpoint($celular)
+            margin: 150px 0 0
+            font-size: 20px
+        +breakpoint($phablet)
+            margin: 170px 0 0
+            font-size: 26px
+        +breakpoint($tablet)
+            margin: 170px 0 0
+            font-size: 33px
+        
+    p
+        margin-top: 15px
+        color: #fff
+        text-align: center
+        font-size: 22px
+        font-family: 'Open Sans', sans-serif
+        font-weight: lighter
+        border-shadow: 1px 1px 1px #000
+        +breakpoint($celular)
+            font-size: 10px
+        +breakpoint($phablet)
+            font-size: 14px
+        +breakpoint($tablet)
+            font-size: 18px
+        
