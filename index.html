@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/geral.css">
         <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
         <link rel="stylesheet" href="css/plugins.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -27,190 +28,209 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <header class='header-top'>
-            <div class="container">
-                <h1 class="logo">
-                <a href="index.html">
-                    <img src="img/logo.png" alt="logo principal Matheus Justo">
-                </a>
-                </h1>
-                
-                <div class="links">
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Início</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="curriculo.html">Currículo</a></li>
-                            <li><a href="contato.html">Contato</a></li>
-                        </ul>
-                    </nav>
-
-                    <ul class="social">
-                        <li><a href="#"><i class="fa fa-github"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                    </ul>
-                </div>
-                
-
-                <h2>Olá, meu nome é Matheus Justo</h2>
-                <p>trabalho com design e desenvolvimento front-end. <br>
-                Fiz este site para mostrar meu estilo de trabalho e também te ajudar a construir um site legal.</p>
-
-            </div><!--/container-->
-        </header>
-
-        <section class="servicos">
-            <div class="container">
-                <h2>SERVIÇOS</h2>
-                <div class="blocos">
-
-                    <div class="bloco-servico bloco-design">
-                        <header>
-                            <h3>Design</h3>
-                        </header>
-                        <div class="content-servico">
-                            <img src="img/design.png" alt="icone design">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id autem ad culpa, perferendis eos aliquam.</p>
-                        </div>                    
-                    </div><!--/design-->
-
-                    <div class="bloco-servico bloco-frontend">
-                        <header>
-                            <h3>Front end</h3>
-                        </header>
-                        <div class="content-servico">
-                            <img src="img/devicon.png" alt="icone desenvolvedor">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id autem ad culpa, perferendis eos aliquam.</p>
-                        </div>
-                    </div><!--/frontend-->
-
-                    <div class="bloco-servico bloco-conteudo">
-                        <header>
-                            <h3>Conteudo</h3>
-                        </header>
-                        <div class="content-servico">
-                            <img src="img/adm.png" alt="icone administrador de conteudo">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id autem ad culpa, perferendis eos aliquam.</p>
-                        </div>
-                    </div><!--/conteudo-->
-
-                    <div class="bloco-servico bloco-impressos">
-                        <header>
-                            <h3>Impressos</h3>
-                        </header>
-                        <div class="content-servico">
-                            <img src="img/off.png" alt="icone mídia offline">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id autem ad culpa, perferendis eos aliquam.</p>
-                        </div>
-                    </div><!--/impressos-->
-
-                </div><!--/blocos-->
-
-                <hr>
-            </div><!--/container-->
-        </section>
-        <section class="tecnologias">
-            <div class="container">
-                <h2>TÉCNOLOGIAS QUE GOSTO <br> DE USAR</h2>
-            </div>
-            <div class="tecnologias-bg">
+        <nav class="hamburguerMenu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="curriculo.html">Currículo</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+         </nav>
+        <div class="layout">
+            <header class='header-top'>
                 <div class="container">
-                    <div class="blocos">
-                    <div class="bloco-jquery bloco-tecnlogias">
-                        <img src="img/tecnologias/jquery.png" alt="">
-                    </div><!----/jquery-->
-                    <div class="bloco-js bloco-tecnlogias">
-                        <img src="img/tecnologias/js.png" alt="">
-                    </div><!--js-->
-                    <div class="bloco-wordpress bloco-tecnlogias">
-                        <img src="img/tecnologias/wp.png" alt="">
-                    </div><!--/wordpress-->
+                    <h1 class="logo wow slideInLeft" data-wow-duration="1s" data-wow-delay="1">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="logo principal Matheus Justo">
+                    </a>
+                    </h1>
+                    
+                    <div class="links wow slideInRight" data-wow-duration="1s" data-wow-delay="1">
+                        <nav>
+                            <ul>
+                                <li><a href="index.html">Início</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="curriculo.html">Currículo</a></li>
+                                <li><a href="contato.html">Contato</a></li>
+                            </ul>
+                        </nav>
+                        <a class="toggle" href="#">
+                            <span class="toggleIcon"></span>
+                            <span class="toggleIcon"></span>
+                            <span class="toggleIcon"></span>
+                        </a>
 
-                    <!-- segunda linha -->
-
-                    <div class="bloco-sass bloco-tecnlogias">
-                        <img src="img/tecnologias/sass.png" alt="">
-                    </div><!----/sass-->
-                    <div class="bloco-git bloco-tecnlogias">
-                        <img src="img/tecnologias/git.png" alt="">
-                    </div><!--git-->
-                    <div class="bloco-angular bloco-tecnlogias">
-                        <img src="img/tecnologias/angular.png" alt="">
-                    </div><!--/angular-->
-
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-github"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        </ul>
                     </div>
                     
+
+                    <h2>Olá, meu nome é Matheus Justo</h2>
+                    <p>trabalho com design e desenvolvimento front-end. <br>
+                    Fiz este site para mostrar meu estilo de trabalho e também te ajudar a construir um site legal.</p>
+
                 </div><!--/container-->
-            </div>
-            <div class="container">
-                <hr>
-            </div>
-            
-        </section>
-        <section class="sobre">
-            <div class="container">
-                <h2>UM POUCO SOBRE MIM</h2>
+            </header>
+
+            <section class="servicos">
                 <div class="container">
+                    <h2>SERVIÇOS</h2>
+                    <div class="blocos">
+
+                        <div class="bloco-servico bloco-design wow slideInDown" data-wow-duration="1s" data-wow-delay="1">
+                            <header>
+                                <h3>Design</h3>
+                            </header>
+                            <div class="content-servico">
+                                <img src="img/design.png" alt="icone design">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id autem ad culpa, perferendis eos aliquam.</p>
+                            </div>                    
+                        </div><!--/design-->
+
+                        <div class="bloco-servico bloco-frontend wow slideInDown" data-wow-duration="1.5s" data-wow-delay="1">
+                            <header>
+                                <h3>Front end</h3>
+                            </header>
+                            <div class="content-servico">
+                                <img src="img/devicon.png" alt="icone desenvolvedor">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id autem ad culpa, perferendis eos aliquam.</p>
+                            </div>
+                        </div><!--/frontend-->
+
+                        <div class="bloco-servico bloco-conteudo wow slideInDown" data-wow-duration="2s" data-wow-delay="1">
+                            <header>
+                                <h3>Conteudo</h3>
+                            </header>
+                            <div class="content-servico">
+                                <img src="img/adm.png" alt="icone administrador de conteudo">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id autem ad culpa, perferendis eos aliquam.</p>
+                            </div>
+                        </div><!--/conteudo-->
+
+                        <div class="bloco-servico bloco-impressos wow slideInDown" data-wow-duration="2.5s" data-wow-delay="1">
+                            <header>
+                                <h3>Impressos</h3>
+                            </header>
+                            <div class="content-servico">
+                                <img src="img/off.png" alt="icone mídia offline">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id autem ad culpa, perferendis eos aliquam.</p>
+                            </div>
+                        </div><!--/impressos-->
+
+                    </div><!--/blocos-->
+
+                    <hr>
+                </div><!--/container-->
+            </section>
+            <section class="tecnologias">
+                <div class="container">
+                    <h2>TÉCNOLOGIAS QUE GOSTO <br> DE USAR</h2>
+                </div>
+                <div class="tecnologias-bg">
+                    <div class="container">
+                        <div class="blocos">
+                        <div class="bloco-jquery bloco-tecnlogias">
+                            <img src="img/tecnologias/jquery.png" alt="">
+                        </div><!----/jquery-->
+                        <div class="bloco-js bloco-tecnlogias">
+                            <img src="img/tecnologias/js.png" alt="">
+                        </div><!--js-->
+                        <div class="bloco-wordpress bloco-tecnlogias">
+                            <img src="img/tecnologias/wp.png" alt="">
+                        </div><!--/wordpress-->
+
+                        <!-- segunda linha -->
+
+                        <div class="bloco-sass bloco-tecnlogias">
+                            <img src="img/tecnologias/sass.png" alt="">
+                        </div><!----/sass-->
+                        <div class="bloco-git bloco-tecnlogias">
+                            <img src="img/tecnologias/git.png" alt="">
+                        </div><!--git-->
+                        <div class="bloco-angular bloco-tecnlogias">
+                            <img src="img/tecnologias/angular.png" alt="">
+                        </div><!--/angular-->
+
+                        </div>
+                        
+                    </div><!--/container-->
+                </div>
+                <div class="container">
+                    <hr>
+                </div>
+                
+            </section>
+            <section class="sobre">
+                <div class="container">
+                    <h2>UM POUCO SOBRE MIM</h2>
+                    <div class="container">
+                        
+                    </div>
+                    <section class="sectionEsquerda">
+                        <header>
+                            <img src="img/perfil.png" alt="">
+                            <h3>Matheus Justo</h3>
+                        </header>
+                        <article class="texto">
+                            <p>
+                                Olá, Meu eu sou Matheus, tenho 20 anos, moro no Guarujá, trabalho com design gráfico e desenvolvimento front end.</p>
+                            <p> Estudei design gráfico durante dois anos em uma gradução de curta duração na universidade paulista em Santos, e atualmente sou estudante de Administração e faço cursos paralelos voltado a área de desenvolvimento.</p>
+                            <p> O curso de administração veio abrindo meus horizontes para áreas de gestão de projetos, capitais intelctuais,
+                                gestão de sistema de informação, tempo e diversas outras coisas que envolvem a área de criação e desenvolvimento.</p>
+                            </p>
+                        </article>
+                        
+                    </section>
+                    
+                    <artcile class="sectionDireita">
+                        <header>
+                            <h3>CURRÍCULO RESUMIDO</h3>
+                        </header>
+                        <article class="texto">
+                            <ul>
+                                <li>Bacharel em Administração (andamento)</li>
+                                <li>Formação front end (caelum 2016)</li>
+                                <li>Técnologo em Design Gráfico (UNIP 2014)</li>
+                                <li>Photoshop anvançado (Tecnoponta 2014)</li>
+                                <li>Mais de 2 anos de expêriencia profissional
+        com designer gráfico</li>
+                            </ul>
+                            <p>
+                                PARA VER MEU CÚRRICULO COMPLETO <br>CLIQUE EM VER MAIS
+                            </p>
+                            <a href="curriculo.html">VER MAIS</a>
+                        </article>
+
+                    </section>
                     
                 </div>
-                <section class="sectionEsquerda">
-                    <header>
-                        <img src="img/perfil.png" alt="">
-                        <h3>Matheus Justo</h3>
-                    </header>
-                    <article class="texto">
-                        <p>
-                            Olá, Meu eu sou Matheus, tenho 20 anos, moro no Guarujá, trabalho com design gráfico e desenvolvimento front end.</p>
-                        <p> Estudei design gráfico durante dois anos em uma gradução de curta duração na universidade paulista em Santos, e atualmente sou estudante de Administração e faço cursos paralelos voltado a área de desenvolvimento.</p>
-                        <p> O curso de administração veio abrindo meus horizontes para áreas de gestão de projetos, capitais intelctuais,
-                            gestão de sistema de informação, tempo e diversas outras coisas que envolvem a área de criação e desenvolvimento.</p>
-                        </p>
-                    </article>
-                    
-                </section>
-                
-                <artcile class="sectionDireita">
-                    <header>
-                        <h3>CURRÍCULO RESUMIDO</h3>
-                    </header>
-                    <article class="texto">
-                        <ul>
-                            <li>Bacharel em Administração (andamento)</li>
-                            <li>Formação front end (caelum 2016)</li>
-                            <li>Técnologo em Design Gráfico (UNIP 2014)</li>
-                            <li>Photoshop anvançado (Tecnoponta 2014)</li>
-                            <li>Mais de 2 anos de expêriencia profissional
-    com designer gráfico</li>
-                        </ul>
-                        <p>
-                            PARA VER MEU CÚRRICULO COMPLETO <br>CLIQUE EM VER MAIS
-                        </p>
-                        <a href="curriculo.html">VER MAIS</a>
-                    </article>
+            </section>
+            
 
-                </section>
-                
-            </div>
-        </section>
+            <footer>
+                <div class="container">
+                    <h2><a href="index.html"><img src="img/logo-rodape.png" alt="logo rodapé matheus garcia"></a></h2>
+                    <ul class="social-footer">
+                        <li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                    <p>2017 - &copy - Copia não comédia</p>
+                </div>
+            </footer>
+        </div>
         
-
-        <footer>
-            <div class="container">
-                <h2><a href="index.html"><img src="img/logo-rodape.png" alt="logo rodapé matheus garcia"></a></h2>
-                <ul class="social-footer">
-                    <li><a href="#"><i class="fa fa-github-alt"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                </ul>
-                <p>2017 - &copy - Copia não comédia</p>
-            </div>
-        </footer>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/toggle.js"></script>
+        <script src="bower_components/wow/dist/wow.min.js"></script>
+        
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -220,6 +240,11 @@
             e.src='https://www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+        <script>
+            $(function() {
+                new WOW().init();
+            });
         </script>
     </body>
 </html>
