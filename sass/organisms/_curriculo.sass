@@ -1,0 +1,151 @@
+
+.header-top
+    +clearfix
+    height: 140px !important
+    min-height: 100px !important
+    background: #222 !important
+    padding-top: 20px
+    +breakpoint($celular)
+        padding: 5px 0
+        min-height: 570px
+    +breakpoint($phablet)
+        padding: 5px 0
+    +breakpoint($tablet)
+        padding: 5px 0
+    .logo
+        display: block
+        float: left
+        img
+            +breakpoint($celular)
+                width: 80px
+
+    .links
+        float: right
+        padding-top: 10px
+        
+
+        nav, .social
+            display: inline-block
+
+        nav
+            +breakpoint($celular)
+                display: none
+            +breakpoint($phablet)
+                display: none
+            ul
+                list-style: none
+            li
+                display: inline-block
+                margin-right: 20px
+                +breakpoint($tablet)
+                    margin-right: 10px
+                a
+                    text-decoration: none
+                    text-transform: uppercase
+                    color: #fff
+                    &:hover
+                        text-decoration: underline
+        .social
+            list-style: none
+            +breakpoint($celular)
+                display: none
+            +breakpoint($phablet)
+                padding-top: 5px
+            +breakpoint($tablet)
+                padding-top: 5px
+            li
+                display: inline-block
+                a
+                    color: #fff
+                    i
+                        font-size: 24px
+                        margin: 0 5px
+
+//FIM DO HEADER
+main
+    height: 600px
+    position: relative
+    +clearfix
+.aside
+    width: 20%
+    height: 600px
+    text-align: center
+    padding: 15px 0
+    float: left
+    border-right: 1px solid #000
+    box-shadow: 2px 0px 1px 0px rgba(50, 50, 50, 0.34)
+    figure
+        width: 150px
+        height: 150px
+        img
+            +img-responsive
+            margin-left: 40%
+    h2
+        color: #000
+        margin-bottom: 30px
+
+    .conteudo-aside
+        p
+            font-size: 16px
+            margin-bottom: -15px
+            padding: 0
+            color: #000
+        
+        a
+            margin: 5px 0
+            font-size: 16px
+            display: inline-block
+            margin: 20px 10px
+            color: #000
+            
+        
+        .telefone
+            display: inline-block
+            p
+                float: right
+                color: #000
+                padding-top: 5px
+            i
+                float: left
+                font-size: 30px
+                margin-right: 10px
+
+
+.social-aside
+    margin-top: 50px
+    ul
+        list-style: none
+        margin: 0
+        padding: 0
+        box-sizing: border-box
+        li
+            float: left
+            a
+                color: #222
+
+                i
+                    font-size: 2em
+                    margin: 0.1em 0.65em
+
+
+.conteudo-principal
+    width: 80%
+    height: 600px
+    padding: 20px
+    float: left
+    display: block
+    overflow-x: wrap
+    word-wrap:  normal
+    overflow-y: scroll
+
+    
+    
+
+.clear
+    +clearfix
+
+.fixesidebar
+    display: fixed
+
+
+

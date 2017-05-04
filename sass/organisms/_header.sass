@@ -1,6 +1,49 @@
+.mouse
+    width: 30px
+    height: 45px
+    display: block
+    position: relative
+    bottom: -25px
+    left: 47%
+    border: 2px solid #000
+    border-radius: 30px
+    background: transparent
+    
+    .wheel
+      display: block
+      position: absolute
+      top: 10px
+      left: 50%
+      width: 4px
+      height: 4px
+      margin: 0 0 0 -2px
+      background: #000
+      border-radius: 50%
+      animation: scrolling 1.8s linear 0s infinite normal none
+
+@keyframes scrolling
+  0%
+    transform: translate3d(0,0,0)
+    opacity: 1
+  
+  1%
+    transform: translate3d(0,5px,0)
+    opacity: 1
+  
+  10%
+    transform: translate3d(0,10px,0)
+    opacity: 0
+  
+  15%
+    transform: translate3d(0,15,0)
+    opacity: 0
+  
+  70%
+    transform: translate3d(0, 20, 0)
+    opacity: 0
 .header-top
     +clearfix
-    min-height: 670px
+    height: 100%
     background:
         image: url('../img/backgroundheader.png')
         position: top center
@@ -86,6 +129,7 @@
         
     p
         margin-top: 15px
+        margin-bottom: 180px
         color: #fff
         text-align: center
         font-size: 22px
@@ -94,6 +138,7 @@
         border-shadow: 1px 1px 1px #000
         +breakpoint($celular)
             font-size: 10px
+            margin-bottom: 120px
         +breakpoint($phablet)
             font-size: 14px
         +breakpoint($tablet)
